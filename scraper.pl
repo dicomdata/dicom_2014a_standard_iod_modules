@@ -7,6 +7,9 @@ package Dicom::IOD::Module::Handler;
 use strict;
 use warnings;
 
+# Modules.
+use List::MoreUtils qw(any);
+
 # Constructor.
 sub new {
 	my ($type, %params) = @_;
