@@ -1,6 +1,64 @@
 TODO
 ====
-2.
+2. Je tady jeste jedna podsekce modulu:
+   - Common Patient IE Modules
+   - Common Study IE Modules
+   - Common Series IE Modules
+   - Common Frame of Reference Information Entity Modules
+   - Common Equipment IE Modules
+   - Common Image IE Modules
+   - CT Modules
+   - MR Modules
+   - Nuclear Medicine Modules
+   - Ultrasound Modules
+   - Secondary Capture Modules
+   - X-Ray Modules
+   - Radiotherapy Modules
+   - PET Information Module Definitions -> ?
+   - Hardcopy Modules
+   - DX Modules
+   - VL Modules and Functional Group Macros -> ?
+   - MR Spectroscopy Modules
+   - Ophthalmic Photography and Tomography Modules
+   - Stereometric Modules
+   - Enhanced XA/XRF Image -> Enhanced XA/XRF Image Modules
+   - Segmentation -> Segmentation Modules
+   - X-Ray 3D -> X-Ray 3D Modules
+   - Enhanced PET Modules
+   - Surface Segmentation -> Surface Segmentation Modules
+   - Implant Template Group Module -> Implant Template Group Modules
+   - Implant Assembly Template -> Implant Assembly Template Modules
+   - Generic Implant Template Modules
+   - Substance Administration Modules
+   - Enhanced US Volume Modules and Functional Group Macros -> ?
+   - Ophthalmic Refractive Measurements Modules
+   - Visual Field Static Perimetry Measurements Modules
+   - Intravascular Optical Coherence Tomography Modules
+   - Ophthalmic Thickness Map Modules
+   - Optical Surface Scanner Modules
+   - Corneal Topography Map Modules
+   - Breast Projection Image Modules
+   - Key Object Selection Modules
+3. Makra (neni modul)
+   - Surface Mesh Primitives Macro
+   - Vectors Macro
+   - Points Macro
+   - Numeric Measurement Macro
+   - Code Macro
+   - Composite Object Reference Macro
+   - Image Reference Macro
+   - Waveform Reference Macro
+   - Spatial Coordinates Macro
+   - Temporal Coordinates Macro
+   - Container Macro
+   - 3D Spatial Coordinates Macro
+   - Hanging Protocol Selector Attribute Macros (Ma podsekce)
+4. Neni modul.
+   - Common CT and MR Descriptions
+   - Storage Commitment Attribute Description
+   - SR Content Tree Example (Informative)
+   - Observation Context Encoding
+5.
 
 Applied
 =======
