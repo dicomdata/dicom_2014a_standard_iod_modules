@@ -7,9 +7,6 @@ package Dicom::IOD::Module::Handler;
 use strict;
 use warnings;
 
-# Modules.
-use List::MoreUtils qw(any);
-
 # Constructor.
 sub new {
 	my ($type, %params) = @_;
@@ -131,7 +128,7 @@ sub characters {
 			if ($module =~ m/^(.*?)\s*(\(Retired\))$/ms) {
 				$module = $1;
 				$retired = 1;
-			} elsif (any { $_ eq $module } @{$self->{'xxx_retired_modules'}}) {
+			} elsif ($self->_any($module)) {
 				$retired = 1;
 			}
 			$self->{'dt'}->insert({
@@ -142,6 +139,17 @@ sub characters {
 		}
 	}
 	return;
+}
+
+# Search in retired modules.
+sub _any {
+	my ($self, $module) = @_;
+	foreach my $xxx_retired_module (@{$self->{'xxx_retired_modules'}}) {
+		if ($xxx_retired_module eq $module) {
+			return 1;
+		}
+	}
+	return 0;
 }
 
 package main;
