@@ -16,6 +16,25 @@ sub new {
 		'modules_flag' => 0,
 		'section_2_flag' => 0,
 		'section_2_stack' => [],
+		'xxx_retired_modules' => [
+			# TODO Opravit titulky ve standardu.
+			'Visit Discharge Module',
+			'Visit Scheduling Module',
+			'Study Relationship Module',
+			'Study Identification Module',
+			'Study Classification Module',
+			'Study Scheduling Module',
+			'Study Acquisition Module',
+			'Study Read Module',
+			'Study Component Module',
+			'Study Component Relationship Module',
+			'Study Component Acquisition Module',
+			'Patient Summary Module',
+			'Study Content Module',
+			'LUT Identification Module',
+			'Print Request Module',
+			'Overlay Identification Module',
+		],
 	}, $type;
 }
 
@@ -108,6 +127,8 @@ sub characters {
 			my $retired = 0;
 			if ($module =~ m/^(.*?)\s*(\(Retired\))$/ms) {
 				$module = $1;
+				$retired = 1;
+			} elsif (any { $_ eq $module } @{$self->{'xxx_retired_modules'}}) {
 				$retired = 1;
 			}
 			$self->{'dt'}->insert({
