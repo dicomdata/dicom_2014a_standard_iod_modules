@@ -116,8 +116,8 @@ sub characters {
 		&& $self->{'section_2_stack'}->[-2] eq 'section') {
 
 		if (@{$self->{'section_2_stack'}} == 2) {
-			print "Section: $self->{'section'}\n";
 			$self->{'section'} = $characters->{'Data'};
+			print "Section: $self->{'section'}\n";
 
 		} elsif (@{$self->{'section_2_stack'}} == 3
 			&& $self->{'section_2_stack'}->[-2] eq 'section') {
